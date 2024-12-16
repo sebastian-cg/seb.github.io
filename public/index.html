@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEB.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-sans">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 w-full py-4 px-8 flex justify-between items-center bg-black border-b border-gray-800">
+        <!-- Logo -->
+        <a href="#top" class="text-lg font-bold hover:text-green-400">SEB.</a>
+        
+        <!-- Navigation Menu for Desktop -->
+        <nav>
+            <ul id="menu" class="hidden md:flex space-x-6">
+                <li><a href="#about" class="hover:text-green-400">About</a></li>
+                <li><a href="#skills" class="hover:text-green-400">Skills</a></li>
+                <li><a href="#hobbies" class="hover:text-green-400">Hobbies</a></li>
+                <li><a href="#education" class="hover:text-green-400">Education</a></li>
+                <li><a href="#contact" class="hover:text-green-400">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Hamburger Menu Button for Mobile -->
+        <button id="menu-btn" class="block md:hidden text-white focus:outline-none ml-auto">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="hidden absolute top-16 right-0 w-full bg-black flex flex-col space-y-4 p-8 md:hidden">
+        <li><a href="#about" class="hover:text-green-400">About</a></li>
+        <li><a href="#skills" class="hover:text-green-400">Skills</a></li>
+        <li><a href="#hobbies" class="hover:text-green-400">Hobbies</a></li>
+        <li><a href="#education" class="hover:text-green-400">Education</a></li>
+        <li><a href="#contact" class="hover:text-green-400">Contact</a></li>
+    </ul>
+
+    <!-- Hero Section -->
+    <section class="w-full flex flex-col-reverse md:flex-row items-center justify-between py-16 px-8 md:px-16">
+        <!-- Left Content -->
+        <div class="md:w-1/2">
+            <h1 class="text-5xl font-bold mb-4">Hi, I'm Sebastian Carl Gomez</h1>
+            <p class="text-gray-400 mb-6">
+                A passionate student eager to learn, grow, and create.
+                Exploring web development, design, and everything tech. Let’s build something great together!
+            </p>
+            <a href="#contact" class="bg-green-500 text-black px-6 py-3 rounded-full hover:bg-gray-900 hover:text-white transition">Let’s get started ➤</a>
+        </div>
+        <!-- Right Content - Image -->
+        <div class="md:w-1/2 flex justify-center">
+            <img src="/images/profile.jpg" alt="Profile Photo" class="w-64 h-64 object-cover rounded-full shadow-lg border-2 border-green-400">
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 px-8 md:px-16 bg-gray-900">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="text-gray-400">
+            I am an aspiring software developer passionate about creating innovative solutions and improving user experiences through thoughtful design and coding. I enjoy learning new technologies and tackling challenges to grow my skills.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 px-8 md:px-16">
+        <h2 class="text-3xl font-bold mb-8">My Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-gray-800 p-6 rounded text-center">
+                <i class="fab fa-html5 text-orange-500 text-3xl mb-2"></i>
+                <p class="text-lg font-semibold">HTML</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded text-center">
+                <i class="fab fa-css3-alt text-blue-500 text-3xl mb-2"></i>
+                <p class="text-lg font-semibold">CSS</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded text-center">
+                <i class="fab fa-js-square text-yellow-500 text-3xl mb-2"></i>
+                <p class="text-lg font-semibold">JavaScript</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded text-center">
+                <i class="fas fa-paint-brush text-teal-500 text-3xl mb-2"></i>
+                <p class="text-lg font-semibold">TailwindCSS</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="py-16 px-8 md:px-16 bg-gray-900">
+        <h2 class="text-3xl font-bold mb-8">My Hobbies</h2>
+        <ul class="list-disc pl-8 text-gray-400">
+            <li>Reading Manga</li>
+            <li>Coding and Learning</li>
+            <li>Playing Games</li>
+            <li>Basketball</li>
+        </ul>
+    </section>
+
+    <section id="education" class="py-16 px-8 md:px-16">
+        <h2 class="text-3xl font-bold mb-4">Education</h2>
+        <div id="education-list">
+            
+            <div class="mb-6">
+                <p class="text-gray-400 font-semibold">Bachelor of Science in Information Technology</p>
+                <p class="text-gray-400">Camarines Norte State College, 2023-</p>
+            </div>
+            <div class="mb-6">
+                <p class="text-gray-400 font-semibold">Senior High School</p>
+                <p class="text-gray-400">ACLC College of Daet, 2018-2020</p>
+            </div>
+
+            <div class="mb-6">
+                <p class="text-gray-400 font-semibold">Junior High School</p>
+                <p class="text-gray-400">Gonzales Ascutia High School, 2015-2018</p>
+            </div>
+
+            <div class="mb-6">
+                <p class="text-gray-400 font-semibold">Elementary School</p>
+                <p class="text-gray-400">Talisay Elementary School, 2009-2015</p>
+            </div>
+            
+        </div>
+        
+    </section>
+
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="py-16 px-8 md:px-16 bg-gray-900">
+        <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+        <form class="space-y-4">
+            <div>
+                <label for="name" class="block mb-2">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your name" class="w-full p-2 rounded bg-gray-800 text-white focus:outline-none">
+            </div>
+            <div>
+                <label for="email" class="block mb-2">Your Email</label>
+                <input type="email" id="email" placeholder="Enter your email" class="w-full p-2 rounded bg-gray-800 text-white focus:outline-none">
+            </div>
+            <div>
+                <label for="message" class="block mb-2">Message</label>
+                <textarea id="message" rows="4" placeholder="Your message" class="w-full p-2 rounded bg-gray-800 text-white focus:outline-none"></textarea>
+            </div>
+            <button type="button" id="sendMessageBtn" class="bg-green-500 text-black px-6 py-2 rounded hover:bg-green-600 transition">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Modal -->
+    <div id="messageModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+        <div class="bg-gray-800 p-6 rounded shadow-lg w-11/12 md:w-1/3">
+            <h3 class="text-xl font-bold mb-4 text-green-500">Message Sent</h3>
+            <p class="text-gray-300 mb-6">Thank you for reaching out! I will get back to you soon.</p>
+            <button id="closeModalBtn" class="bg-green-500 text-black px-4 py-2 rounded hover:bg-green-600 transition w-full">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-gray-500 bg-black">
+        <p>© 2024 SEB. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        const messageModal = document.getElementById('messageModal');
+        const sendMessageBtn = document.getElementById('sendMessageBtn');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+
+        
+        sendMessageBtn.addEventListener('click', (e) => {
+            e.preventDefault(); 
+            messageModal.classList.remove('hidden');
+        });
+
+        
+        closeModalBtn.addEventListener('click', () => {
+            messageModal.classList.add('hidden');
+        });
+
+        
+        messageModal.addEventListener('click', (e) => {
+            if (e.target === messageModal) {
+                messageModal.classList.add('hidden');
+            }
+        });
+    </script>
+    
+</body>
+</html>
